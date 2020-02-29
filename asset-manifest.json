@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-movie-database/static/css/main.7da7ea02.chunk.css",
-    "main.js": "/react-movie-database/static/js/main.6659fc1b.chunk.js",
-    "main.js.map": "/react-movie-database/static/js/main.6659fc1b.chunk.js.map",
+    "main.css": "/react-movie-database/static/css/main.4abb1da0.chunk.css",
+    "main.js": "/react-movie-database/static/js/main.5c971eaf.chunk.js",
+    "main.js.map": "/react-movie-database/static/js/main.5c971eaf.chunk.js.map",
     "runtime-main.js": "/react-movie-database/static/js/runtime-main.463d994a.js",
     "runtime-main.js.map": "/react-movie-database/static/js/runtime-main.463d994a.js.map",
     "static/css/2.b2627411.chunk.css": "/react-movie-database/static/css/2.b2627411.chunk.css",
     "static/js/2.0e055a07.chunk.js": "/react-movie-database/static/js/2.0e055a07.chunk.js",
     "static/js/2.0e055a07.chunk.js.map": "/react-movie-database/static/js/2.0e055a07.chunk.js.map",
     "index.html": "/react-movie-database/index.html",
-    "precache-manifest.3b86a886d647150f4cc7f6a5cb6ab82c.js": "/react-movie-database/precache-manifest.3b86a886d647150f4cc7f6a5cb6ab82c.js",
+    "precache-manifest.94e3ac4bd4f51ad6605345d1faa9b09f.js": "/react-movie-database/precache-manifest.94e3ac4bd4f51ad6605345d1faa9b09f.js",
     "service-worker.js": "/react-movie-database/service-worker.js",
     "static/css/2.b2627411.chunk.css.map": "/react-movie-database/static/css/2.b2627411.chunk.css.map",
-    "static/css/main.7da7ea02.chunk.css.map": "/react-movie-database/static/css/main.7da7ea02.chunk.css.map",
+    "static/css/main.4abb1da0.chunk.css.map": "/react-movie-database/static/css/main.4abb1da0.chunk.css.map",
     "static/js/2.0e055a07.chunk.js.LICENSE.txt": "/react-movie-database/static/js/2.0e055a07.chunk.js.LICENSE.txt",
     "static/media/PoweredByRectangle_Green.svg": "/react-movie-database/static/media/PoweredByRectangle_Green.27b65cb4.svg",
     "static/media/jane-doe.svg": "/react-movie-database/static/media/jane-doe.d0819fb2.svg",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.463d994a.js",
     "static/css/2.b2627411.chunk.css",
     "static/js/2.0e055a07.chunk.js",
-    "static/css/main.7da7ea02.chunk.css",
-    "static/js/main.6659fc1b.chunk.js"
+    "static/css/main.4abb1da0.chunk.css",
+    "static/js/main.5c971eaf.chunk.js"
   ]
 }
