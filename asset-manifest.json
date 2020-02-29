@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-movie-database/static/css/main.6a0d33c7.chunk.css",
+    "main.js": "/react-movie-database/static/js/main.ef88fd0e.chunk.js",
+    "main.js.map": "/react-movie-database/static/js/main.ef88fd0e.chunk.js.map",
+    "runtime-main.js": "/react-movie-database/static/js/runtime-main.463d994a.js",
+    "runtime-main.js.map": "/react-movie-database/static/js/runtime-main.463d994a.js.map",
+    "static/css/2.da0c8c99.chunk.css": "/react-movie-database/static/css/2.da0c8c99.chunk.css",
+    "static/js/2.aaf78a9a.chunk.js": "/react-movie-database/static/js/2.aaf78a9a.chunk.js",
+    "static/js/2.aaf78a9a.chunk.js.map": "/react-movie-database/static/js/2.aaf78a9a.chunk.js.map",
+    "index.html": "/react-movie-database/index.html",
+    "precache-manifest.67b67fc7ceeafc965c4d05ce5b257244.js": "/react-movie-database/precache-manifest.67b67fc7ceeafc965c4d05ce5b257244.js",
+    "service-worker.js": "/react-movie-database/service-worker.js",
+    "static/css/2.da0c8c99.chunk.css.map": "/react-movie-database/static/css/2.da0c8c99.chunk.css.map",
+    "static/css/main.6a0d33c7.chunk.css.map": "/react-movie-database/static/css/main.6a0d33c7.chunk.css.map",
+    "static/js/2.aaf78a9a.chunk.js.LICENSE.txt": "/react-movie-database/static/js/2.aaf78a9a.chunk.js.LICENSE.txt",
+    "static/media/PoweredByRectangle_Green.svg": "/react-movie-database/static/media/PoweredByRectangle_Green.27b65cb4.svg",
+    "static/media/jane-doe.svg": "/react-movie-database/static/media/jane-doe.d0819fb2.svg",
+    "static/media/john-doe.svg": "/react-movie-database/static/media/john-doe.4c05fee4.svg",
+    "static/media/no_poster.svg": "/react-movie-database/static/media/no_poster.38f334bf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.463d994a.js",
+    "static/css/2.da0c8c99.chunk.css",
+    "static/js/2.aaf78a9a.chunk.js",
+    "static/css/main.6a0d33c7.chunk.css",
+    "static/js/main.ef88fd0e.chunk.js"
+  ]
+}
