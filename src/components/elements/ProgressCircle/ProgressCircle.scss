@@ -1,0 +1,35 @@
+$cubic-bezier: .5s cubic-bezier(0.4, 0.0, 0.2, 1);
+@mixin transition() {
+  -webkit-transition: stroke-dashoffset $cubic-bezier;
+  transition: stroke-dashoffset $cubic-bezier;
+}
+
+.progress-circle-wrap {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 .5em 1em -.125em rgba(10, 10, 10, .5), 0 0 0 1px rgba(10, 10, 10, .5);
+  margin-right: 22.5px;
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1824;
+  .progress-circle {
+    circle {
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+      @include transition();
+    }    
+  }
+  .progress-numeric {
+    display: block;
+    color: #efefef;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+  }
+}

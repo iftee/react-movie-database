@@ -1,0 +1,13 @@
+.browse-by-actor {
+  .movie-thumbnail-grid-wrap {
+    padding-top: 0;
+
+    .movie-thumbnail-grid-title {
+      text-align: left;
+      
+      @media (min-width: 769px) {
+        padding-top: 0;
+      }
+    }
+  }
+}

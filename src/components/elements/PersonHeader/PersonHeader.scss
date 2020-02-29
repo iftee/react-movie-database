@@ -1,0 +1,64 @@
+$cubic-bezier: .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+@mixin transition() {
+  -webkit-transition: all $cubic-bezier;
+  transition: all $cubic-bezier;
+}
+#root {
+  .person-info-wrap {
+    display: block;
+
+    .person-image-wrap {
+      .person-image {
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }    
+  
+    .person-info {
+      padding: 8px;
+      background-color: #13101a;
+      border-radius: 5px;
+      margin-top: 20px;
+  
+      h4 {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+  
+      .external-link {
+        padding: 1px 5px;
+        display: inline-block;
+        border: 1px solid #dc2d43;
+        color: #dc2d43;
+        margin: 0 5px 5px 0;
+        border-radius: 5px;
+        @include transition();      
+        &:hover {
+          color: #efefef;
+          border-color: #efefef;
+        }
+      }
+    }
+
+    @media (min-width: 400px) and (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
+
+      .person-image-wrap {
+        flex: none;
+        width: 30%;
+      }
+
+      .person-info {
+        margin-top: 0;
+        margin-left: 22.5px;
+        flex: none;
+        width: calc(70% - 22.5px);
+      }
+    }
+
+  }  
+}

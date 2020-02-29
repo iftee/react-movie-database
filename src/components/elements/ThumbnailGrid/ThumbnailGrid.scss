@@ -1,0 +1,28 @@
+.movie-thumbnail-grid-wrap {  
+  padding-top: 2.25em;
+
+  .movie-thumbnail-grid-title {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 800;
+    padding: 22.5px 0;
+    text-align: center;
+
+    .movie-thumbnail-grid-title-pre {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-bottom: 11.25px;
+    }
+  }
+
+  .movie-thumbnail-grid {
+    @media screen and (max-width: 480px) {
+      .column {
+        width: 100% !important;
+      }
+    }
+  }
+}

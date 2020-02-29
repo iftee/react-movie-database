@@ -1,0 +1,44 @@
+$cubic-bezier: .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+@mixin transition() {
+  -webkit-transition: all $cubic-bezier;
+  transition: all $cubic-bezier;
+}
+
+.load-more-button-wrapper {
+  padding: 22.5px 0;
+  text-align: center;
+
+  button {
+    position: relative;
+
+    svg {
+      @include transition();
+  
+      &:nth-child(1) {
+        opacity: 1;
+        transform: scale(1);
+      }
+  
+      &:nth-child(2) {
+        opacity: 0;
+        position: absolute;
+        left: 30px;
+        top: 12px;
+      }
+    }
+  
+    &:hover,
+    &:focus {
+      svg {
+        &:nth-child(1) {
+          opacity: 0;
+          transform: scale(1.6);
+        }
+    
+        &:nth-child(2) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.browse-by-writer {
+  .movie-thumbnail-grid-wrap {
+    padding-top: 0;
+
+    .movie-thumbnail-grid-title {
+      text-align: left;
+            
+      @media (min-width: 769px) {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.person-not-found {
+  .glitch {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: white;
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: 0 auto 3rem;
+    text-transform: uppercase;
+
+    &:before {
+      content: 'Could not find this person';
+      text-transform: uppercase;
+      position:absolute;
+      top: 0;
+      left: -1px;
+      color: white;
+      text-shadow: 2px 0 #dc2d43;
+      display: block;
+      width: 300px;
+      overflow: hidden;
+      z-index: 1;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-animation 4s infinite;
+    }
+
+    &:after {
+      content: 'Could not find this person';
+      text-transform: uppercase;
+      position:absolute;
+      top: 0;
+      left: 1px;
+      color: white;
+      text-shadow: -2px 0 #00ffff;
+      display: block;
+      width: 300px;
+      overflow: hidden;      
+      z-index: 1;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-animation-2 3s infinite;
+    }
+  }
+}

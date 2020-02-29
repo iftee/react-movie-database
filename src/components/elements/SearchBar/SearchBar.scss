@@ -1,0 +1,55 @@
+$cubic-bezier: .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+@mixin transition() {
+  -webkit-transition: color $cubic-bezier, background-color $cubic-bezier, border-color $cubic-bezier;
+  transition: color $cubic-bezier, background-color $cubic-bezier, border-color $cubic-bezier;
+}
+
+.search-section {
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: 3.25rem;
+  left: 0;
+  right: 0;
+  z-index: 29;
+  background-color: #17141f;
+  box-shadow: 0 .5em .5em -.125em rgba(10, 10, 10, .5);
+
+  .control {
+    &.has-icons-left {
+      .icon {
+        color: #495162;
+        @include transition();
+      }
+
+      .input {
+        border-color: #495162;
+        color: #efefef;
+        border-radius: 5px;
+        background-color: #17141f;
+        outline: none !important;
+        @include transition();
+
+        &::-webkit-input-placeholder{
+          color: #495162;
+        }
+        &:-ms-input-placeholder{
+          color: #495162;
+        }
+        &::placeholder {
+          color: #495162;
+        }
+    
+        &:focus {
+          color: #1a1824;
+          border-color: #dc2d43;
+          background-color: #efefef;
+          box-shadow: none;
+
+          & ~ .icon {
+            color: #dc2d43;
+          }
+        }
+      }
+    }
+  }
+}

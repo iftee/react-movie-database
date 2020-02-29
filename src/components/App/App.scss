@@ -1,0 +1,252 @@
+// Bulma Color Override
+$rmdb-ui-color-1: #17141f;
+$rmdb-ui-color-2: #dc2d43;
+$rmdb-ui-color-3: #efefef;
+$rmdb-ui-color-4: #1a1824;
+$rmdb-ui-color-5: #495162;
+
+$body-background-color: $rmdb-ui-color-1;
+
+// Bulma Typography Override
+$body-family: 'Muli', sans-serif;
+$body-size: 15px;
+$body-color: $rmdb-ui-color-3;
+
+// Bulma
+@import "~react-bulma-components/src/index.sass";
+
+// Global Transition
+$cubic-bezier: .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+@mixin transition() {
+  -webkit-transition: all $cubic-bezier;
+  transition: all $cubic-bezier;
+}
+
+// Body
+body {
+  min-height: 100vh;
+}
+
+html {
+  &.has-navbar-fixed-top {
+    padding-top: 0;
+
+    body {
+      padding-top: calc(3.25rem);
+      min-height: calc(100vh - 3.25rem);
+    }
+  }
+
+  // Selection
+  ::-moz-selection {
+    background-color: $rmdb-ui-color-2;
+    color: $rmdb-ui-color-3;
+  }
+  ::selection {
+    background-color: $rmdb-ui-color-2;
+    color: $rmdb-ui-color-3;
+  }
+}
+
+// Animation
+@keyframes noise-animation {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i * (1 / $steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+    }
+  }
+}
+@keyframes noise-animation-2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i * (1 / $steps))} {
+      clip: rect(random(100)+px, 0, random(100)+px, 9999);
+    }
+  }
+}
+
+#root {
+  // Typography
+  .subject-heading {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .content {
+    h1, h2, h3 {
+      font-weight: 800;
+      color: $rmdb-ui-color-3;
+    }
+
+    .subject-heading {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1px;
+      margin-top: 24px;
+      margin-bottom: 5px;
+    }
+  }
+
+  // SVG
+  .loading-circle {
+    stroke: $rmdb-ui-color-2;
+  }
+
+  // Button & Link
+  a,
+  button,
+  .button {
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  a {
+    color: #dc2d43;
+
+    &:hover{
+      color: #dc2d43;
+    }
+
+  }
+
+  .button {
+    background-color: $rmdb-ui-color-2;
+    color: $rmdb-ui-color-3;
+    border-color: $rmdb-ui-color-2;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    height: auto;
+    line-height: 24px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5);
+    @include transition;
+
+    &:hover {
+      background-color: $rmdb-ui-color-4;
+      color: $rmdb-ui-color-2;
+      box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.8);
+    }
+
+    svg {
+      margin: 0 8px 0 0;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  // Navigation
+  .navbar-burger {
+    span {
+      background-color: $rmdb-ui-color-2;
+    }
+  }
+
+  @include until($desktop) {    
+    .navbar-menu {
+      display: block;
+      opacity: 0;
+      -webkit-transition: opacity .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+      transition: opacity .25s cubic-bezier(0.4, 0.0, 0.2, 1);
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }  
+
+    .navbar-menu.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  // Video embed 16:9
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  // Footer
+  .footer {
+    background-color: $rmdb-ui-color-4;
+    padding-bottom: 3rem;
+    text-align: center;
+    border-bottom: 5px solid $rmdb-ui-color-2;
+  
+    img {
+      width: auto;
+      height:auto;
+      max-width: 160px;
+    }
+  }
+}
+
+// Person 404
+.person-not-found {
+  .glitch {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: white;
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: 0 auto 3rem;
+    text-transform: uppercase;
+
+    &:before {
+      content: 'Could not find this person';
+      text-transform: uppercase;
+      position:absolute;
+      top: 0;
+      left: -1px;
+      color: white;
+      text-shadow: 2px 0 #dc2d43;
+      display: block;
+      width: 300px;
+      overflow: hidden;
+      z-index: 1;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-animation 4s infinite;
+    }
+
+    &:after {
+      content: 'Could not find this person';
+      text-transform: uppercase;
+      position:absolute;
+      top: 0;
+      left: 1px;
+      color: white;
+      text-shadow: -2px 0 #00ffff;
+      display: block;
+      width: 300px;
+      overflow: hidden;      
+      z-index: 1;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-animation-2 3s infinite;
+    }
+  }
+}
