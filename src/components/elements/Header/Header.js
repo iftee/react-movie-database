@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import Navbar from 'react-bulma-components/lib/components/navbar';
 import Container from 'react-bulma-components/lib/components/container';
 import { last20Years } from '../../../helpers';
@@ -11,9 +12,9 @@ const Header = () => {
     <Navbar fixed="top" color="black">
       <Container>
         <Navbar.Brand>
-          <Navbar.Item renderAs="a" href="/">
-            <div className="navbar-brand-text">RMDB<span className="is-hidden-mobile"><br/>Discover movies with React JS</span></div> 
-          </Navbar.Item>
+          <NavLink to="/" className="navbar-item">
+            <div className="navbar-brand-text">RMDB<span className="is-hidden-mobile"><br/>Discover movies with React JS</span></div>
+          </NavLink>
           <Navbar.Burger data-target="navMenu" />
         </Navbar.Brand>
         <Navbar.Menu id="navMenu">
@@ -26,25 +27,25 @@ const Header = () => {
               </Navbar.Link>
               <Navbar.Dropdown>
                 <Container className="nav-inline-wrap">
-                  <Navbar.Item href="/genre/28">Action</Navbar.Item>
-                  <Navbar.Item href="/genre/12">Adventure</Navbar.Item>
-                  <Navbar.Item href="/genre/16">Animation</Navbar.Item>
-                  <Navbar.Item href="/genre/35">Comedy</Navbar.Item>
-                  <Navbar.Item href="/genre/80">Crime</Navbar.Item>
-                  <Navbar.Item href="/genre/99">Documentary</Navbar.Item>
-                  <Navbar.Item href="/genre/18">Drama</Navbar.Item>
-                  <Navbar.Item href="/genre/10751">Family</Navbar.Item>
-                  <Navbar.Item href="/genre/14">Fantasy</Navbar.Item>
-                  <Navbar.Item href="/genre/36">History</Navbar.Item>
-                  <Navbar.Item href="/genre/27">Horror</Navbar.Item>
-                  <Navbar.Item href="/genre/10402">Music</Navbar.Item>
-                  <Navbar.Item href="/genre/9648">Mystery</Navbar.Item>
-                  <Navbar.Item href="/genre/10749">Romance</Navbar.Item>
-                  <Navbar.Item href="/genre/878">Science Fiction</Navbar.Item>
-                  <Navbar.Item href="/genre/10770">TV Movie</Navbar.Item>
-                  <Navbar.Item href="/genre/53">Thriller</Navbar.Item>
-                  <Navbar.Item href="/genre/10752">War</Navbar.Item>
-                  <Navbar.Item href="/genre/37">Western</Navbar.Item>
+                  <NavLink to="/genre/28" className="navbar-item">Action</NavLink>
+                  <NavLink to="/genre/12" className="navbar-item">Adventure</NavLink>
+                  <NavLink to="/genre/16" className="navbar-item">Animation</NavLink>
+                  <NavLink to="/genre/35" className="navbar-item">Comedy</NavLink>
+                  <NavLink to="/genre/80" className="navbar-item">Crime</NavLink>
+                  <NavLink to="/genre/99" className="navbar-item">Documentary</NavLink>
+                  <NavLink to="/genre/18" className="navbar-item">Drama</NavLink>
+                  <NavLink to="/genre/10751" className="navbar-item">Family</NavLink>
+                  <NavLink to="/genre/14" className="navbar-item">Fantasy</NavLink>
+                  <NavLink to="/genre/36" className="navbar-item">History</NavLink>
+                  <NavLink to="/genre/27" className="navbar-item">Horror</NavLink>
+                  <NavLink to="/genre/10402" className="navbar-item">Music</NavLink>
+                  <NavLink to="/genre/9648" className="navbar-item">Mystery</NavLink>
+                  <NavLink to="/genre/10749" className="navbar-item">Romance</NavLink>
+                  <NavLink to="/genre/878" className="navbar-item">Science Fiction</NavLink>
+                  <NavLink to="/genre/10770" className="navbar-item">TV Movie</NavLink>
+                  <NavLink to="/genre/53" className="navbar-item">Thriller</NavLink>
+                  <NavLink to="/genre/10752" className="navbar-item">War</NavLink>
+                  <NavLink to="/genre/37" className="navbar-item">Western</NavLink>
                 </Container>                
               </Navbar.Dropdown>
             </Navbar.Item>
@@ -57,7 +58,7 @@ const Header = () => {
               <Navbar.Dropdown>
                 <Container className="nav-inline-wrap" id="nav-year-wrap">
                   {yearValues.map((value, key) => {
-                    return <Navbar.Item key={key} href={`/year/${value}`}>{value}</Navbar.Item>
+                    return <NavLink key={key} to={`/year/${value}`} className="navbar-item">{value}</NavLink>
                   })}
                 </Container>                
               </Navbar.Dropdown>

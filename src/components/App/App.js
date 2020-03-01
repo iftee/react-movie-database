@@ -14,17 +14,19 @@ import './App.scss';
 
 const App = () => {
   return(
-    <Router>
+    <Router>    
+    {/* <Router basename="/react-movie-database/"> */}
+    {/* basename="/react-movie-database/" for deploying to my github pages, empty when deploying to server root */}
       <Header />
         <Switch>
-          {/* Routes */}
-          <Route path="/" component={Home} exact />
+          {/* Routes */}          
           <Route path="/movie/:movieId" component={Movie} exact />
           <Route path="/actor/:actorId" component={BrowseByActor} exact />
           <Route path="/director/:directorId" component={BrowseByDirector} exact />
           <Route path="/writer/:writerId" component={BrowseByWriter} exact />
           <Route path="/genre/:genreId" component={BrowseByGenre} exact />
           <Route path="/year/:yearId" component={BrowseByYear} exact />
+          <Route path="/" component={Home} exact />{/* smallest path goes last, see Route Matchers section from https://reacttraining.com/react-router/web/guides/primary-components */}
           <Route component={NotFound} />
         </Switch>
       <AppFooter />
