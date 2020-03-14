@@ -17,7 +17,7 @@ See the working example at https://iftee.github.io/react-movie-database/
 - Start the development server.
 
 ## Current Limitations
-Due to uploading in GitHub Pages, some routing issues showed up with React Router. Although the major 404 issue has been taken care of as per the [instrusctions](https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing) from Create React App. However these issues are still there to work on:
+Due to uploading in GitHub Pages, some routing issues showed up with React Router. Although, the major 404 issue has been taken care of as per the [instrusctions](https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing) from Create React App, the following limitations are still there:
 - Trying to go from one link to another using same component for routing doesn't work. Example: for example trying to go from `https://iftee.github.io/react-movie-database/genre/16` to `https://iftee.github.io/react-movie-database/genre/878`.
 - Opening a link in new tab will take the new tab to Home page. This is a GitHub Pages limitation and therefor, I'm not sure if I'll spend time on this.
 
