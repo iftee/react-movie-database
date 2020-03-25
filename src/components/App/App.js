@@ -14,9 +14,9 @@ import './App.scss';
 
 const App = () => {
   return(
-    <Router>    
-    {/* <Router basename="/react-movie-database/"> */}
-    {/* basename="/react-movie-database/" for deploying to my github pages, empty when deploying to server root */}
+    // basename="/react-movie-database/" for deploying to my github pages, empty when deploying to server root
+    // <Router basename="/react-movie-database/">    
+    <Router>
       <Header />
         <Switch>
           {/* Routes */}          
@@ -31,7 +31,7 @@ const App = () => {
         </Switch>
       <AppFooter />
     </Router>
-  )
+  );
 }
 
 export default App;
