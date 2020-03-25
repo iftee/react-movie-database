@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
-    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "node-vibrant": "^3.1.5",
     "react": "^16.13.0",
@@ -14,7 +13,7 @@
     "react-dom": "^16.13.0",
     "react-icons": "^3.9.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.1"
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -38,6 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   },
   "homepage": "https://iftee.github.io/react-movie-database"
 }
