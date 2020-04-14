@@ -13,10 +13,10 @@ import AppFooter from '../elements/AppFooter/AppFooter';
 import './App.scss';
 
 const App = () => {
-  return(
-    // basename="/react-movie-database/" for deploying to my github pages, empty when deploying to server root
-    // <Router basename="/react-movie-database/">    
-    <Router>
+  return(    
+    <Router basename="/react-movie-database/">    
+    {/* <Router> */}
+    {/* basename="/react-movie-database/" for deploying to my github pages, empty when deploying to server root */}
       <Header />
         <Switch>
           {/* Routes */}          
