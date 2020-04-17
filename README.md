@@ -1,4 +1,4 @@
-![](https://repository-images.githubusercontent.com/243993285/de860f00-5b8f-11ea-8f74-7fdf33a9decc)
+![Cover](./public/github-cover.png)
 # React Movie Database
 A React application for discovering movies from [TMBD](https://www.themoviedb.org/) database.
 
