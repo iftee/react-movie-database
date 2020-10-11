@@ -14,7 +14,7 @@ import './App.scss';
 
 const App = () => {
   return(    
-    <Router basename="/react-movie-database/">    
+    <Router basename="/react-movie-database">    
     {/* <Router> */}
     {/* basename="/react-movie-database/" for deploying to my github pages, empty when deploying to server root */}
       <Header />

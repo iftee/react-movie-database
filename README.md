@@ -12,17 +12,24 @@ See the working example at https://iftee.github.io/react-movie-database/
 - Discover movies based on genre and release year.
 
 ## Developer Instruction
-- Get an API key from TMBD.
-- Update the `API_Key` value in `src/config.js` file.
-- Install all Node dependencies.
-- Start the development server.
+After a fresh `git clone`, to install all node dependencies, use
+```shell
+npm install
+```
+If you do not have any key for TMDB API, get an API key and update the `API_Key` value in `src/config.js` file.
 
-## Current Limitations
-Due to uploading in GitHub Pages, some routing issues showed up with React Router. Although, the major 404 issue has been taken care of as per the [instrusctions](https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing) from Create React App, the following limitations are still there:
-- Trying to go from one link to another using same component for routing doesn't work. Example: for example trying to go from `https://iftee.github.io/react-movie-database/genre/16` to `https://iftee.github.io/react-movie-database/genre/878`.
-- Opening a link in new tab will take the new tab to Home page. This is a GitHub Pages limitation and therefore, I'm not sure if I'll spend time on this.
-
-Note: These issues will not occur when you work on local server or deploy to the root of a custom domain.
+To start the development server, use
+```shell
+npm run start
+```
+To create a production build, use
+```shell
+npm run build
+```
+To deploy at `github-pages` environmet, use
+```shell
+npm run deploy
+```
 
 ## Future Plans
 When I have free time:
